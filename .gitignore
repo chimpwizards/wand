@@ -1,0 +1,13 @@
+.vscode
+dependencies
+model
+node_modules
+PRIVATE*.md
+package-lock.json
+
+tmp
+samples
+channel
+tools
+lockbox
+dependencies
