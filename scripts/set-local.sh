@@ -40,7 +40,7 @@ cat > /tmp/foo <<EOF
      Key-Length: 1024
      Subkey-Type: ELG-E
      Subkey-Length: 1024
-     Name-Real: Andres FUentes
+     Name-Real: ndruwizz
      Name-Comment: with stupid passphrase
      Name-Email: ndru@chimpwizard.com
      Expire-Date: 0
