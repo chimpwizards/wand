@@ -39,6 +39,12 @@ dependencies:
     git: 'https://github.com/chimpwizards-tools/vscode-server.git'
     tags:
       - tools
+  - path: lockbox
+    git: 'https://github.com/chimpwizards-wand/wand-lockbox.git'
+    tags:
+      - lockbox
+      - vault
+      - secrets
 scripts:
   hello: ./scripts/hello.sh
   start-ssh: scripts/start-ssh.sh

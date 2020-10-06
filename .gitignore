@@ -2,6 +2,7 @@
 dependencies
 model
 node_modules
+private
 PRIVATE*.md
 package-lock.json
 
@@ -11,3 +12,4 @@ channel
 tools
 lockbox
 dependencies
+lockbox

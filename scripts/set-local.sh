@@ -80,8 +80,7 @@ cd ..
 git config --global user.name "ndruwizz"
 git config --global user.email "ndru@chimpwizard.com"
 git config --global credential.helper store
-git config user.name "ndruwizz"
-git config user.email "ndru@chimpwizard.com"
+git config user.name "ndruwizz"; git config user.email "ndru@chimpwizard.com"
 
 
 # Set Environment defaults
