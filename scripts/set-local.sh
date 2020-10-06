@@ -42,7 +42,7 @@ cat > /tmp/foo <<EOF
      Subkey-Length: 1024
      Name-Real: Andres FUentes
      Name-Comment: with stupid passphrase
-     Name-Email: developer@somewhere.com
+     Name-Email: ndru@chimpwizard.com
      Expire-Date: 0
      Passphrase: changeit
      # Do a commit here, so that we can later print "done" :-)
@@ -50,7 +50,7 @@ cat > /tmp/foo <<EOF
      %echo done
 EOF
 gpg --batch --generate-key /tmp/foo
-gpg --list-keys developer@somewhere.com
+gpg --list-keys ndru@chimpwizard.com
 GNUID=$(gpg --list-keys developer@somewhere.com|grep "      "|head -n 1)
 gpg --armor --export $GNUID > /tmp/GNUPUBLIC.KEY
 cat /tmp/GNUPUBLIC.KEY
