@@ -51,7 +51,7 @@ cat > /tmp/foo <<EOF
 EOF
 gpg --batch --generate-key /tmp/foo
 gpg --list-keys ndru@chimpwizard.com
-GNUID=$(gpg --list-keys developer@somewhere.com|grep "      "|head -n 1)
+GNUID=$(gpg --list-keys ndru@chimpwizard.com|grep "      "|head -n 1)
 gpg --armor --export $GNUID > /tmp/GNUPUBLIC.KEY
 cat /tmp/GNUPUBLIC.KEY
 
@@ -62,13 +62,13 @@ echo "******************************************"
 echo "ADMIN SHOULD RUN:"
 echo ""
 #echo "gpg --keyserver hjttps://pgp.mit.edu --recv-key $GNUID"
-#echo "git-crypt add-gpg-user --trusted developer@somewhere.com"
+#echo "git-crypt add-gpg-user --trusted ndru@chimpwizard.com"
 GNUKEY=$(cat /tmp/GNUPUBLIC.KEY)
 echo "echo \""$GNUKEY\"" > ./lockbox/files/GNU.ID"
 echo "gpg --import ./lockbox/files/GNU.ID"
 echo "cd lockbox"
-echo "git-crypt add-gpg-user --trusted developer@somewhere.com"
-echo "git commit -am \"New user developer@somewhere.com\"; git push"
+echo "git-crypt add-gpg-user --trusted ndru@chimpwizard.com"
+echo "git commit -am \"New user ndru@chimpwizard.com\"; git push"
 read -n 1 -p "Press <ENTER> to continue? "
 
 cd lockbox
