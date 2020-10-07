@@ -2,7 +2,7 @@
 echo "Scripts folder: $(dirname \"${BASH_SOURCE[0]}\")"
 
 # Set secrets
-export PAT=$(cat ./lockbox/files/GIT.KEY)
+export GITHUBPAT=$(cat ./lockbox/files/GITHUB.KEY)
 export NPMPAT=$(cat ./lockbox/files/NPM.KEY)
 
 # Set project defaults
