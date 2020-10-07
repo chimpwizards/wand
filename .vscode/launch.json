@@ -17,12 +17,13 @@
                 "${workspaceFolder}/dependencies/spells/workspace/src/Wand.ts",
                 "update",
                 "update",
+                "update",
                 "--location",
                 "${workspaceFolder}"
             ],
             "env": {
                 "NODE_ENV": "development",
-                "DEBUG":"w:*",
+                "DEBUG":"w:cli:workspace:*",
                 "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
             },
             "console": "integratedTerminal",
