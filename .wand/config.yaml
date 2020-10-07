@@ -50,3 +50,4 @@ dependencies:
 scripts:
   hello: ./scripts/hello.sh
   start-ssh: scripts/start-ssh.sh
+  list: ./scripts/list-installed-packages.sh
