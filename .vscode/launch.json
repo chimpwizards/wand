@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "wand workspace update",
+            "cwd": "${workspaceFolder}/dependencies/spells/workspace",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/dependencies/spells/workspace/src/Wand.ts",
+                "update",
+                "update",
+                "--location",
+                "${workspaceFolder}"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG":"w:*",
+                "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },  
+    ]
+}
