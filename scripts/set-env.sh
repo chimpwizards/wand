@@ -20,7 +20,12 @@ export NODE_EXTRA_CA_CERTS=$PWD/lockbox/certs/self-signed-bundle.pem
 export REQUESTS_CA_BUNDLE=$PWD/lockbox/certs/self-signed-bundle.pem
 export CA_BUNDLE=$REQUESTS_CA_BUNDLE
 export SSL_CERT_FILE=$REQUESTS_CA_BUNDLE
-npm config set cafile=$NODE_EXTRA_CA_CERTS
+export GIT_SSL_NO_VERIFY=true
+npm config set cafile $NODE_EXTRA_CA_CERTS --global
+#git config http.sslCAinfo $NODE_EXTRA_CA_CERTS
+#git -c http.sslVerify=false clone https://github.com/chimpwizards/wand
+
+export NODE_TLS_REJECT_UNAUTHORIZED=0
 
 #
 # REFERENCE:
