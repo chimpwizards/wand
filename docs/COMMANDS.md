@@ -45,14 +45,14 @@ eg this command will run the existing sayHi command across all dependencies
 w shell --verbose sayHi
 ```
 
-##### new shell
+##### script new
 
 Enable external shell scripts to be executed thru the wand cli, these command get registered into the .wand/config.yaml file
 
 eg to register hello.sh run
 
 ```sh
-w new shell ./scripts/hello.sh
+w script new ./scripts/hello.sh
 ```
 
 then you will see this at the configuration file
@@ -68,22 +68,22 @@ After that you can call wand cli like this. and it will execute that command ins
 w shell hello ndru
 ```
 
-##### add dependency
+##### dependency add
 
 Adds an existing git repositoty as a dependency into the current workspace
 
 eg:
 
 ```sh
-w add git@github.com:chimpwizards-samples/sample1.git
+w dependency add git@github.com:chimpwizards-samples/sample1.git
 ```
 
-##### new workspace
+##### workspace new
 
 Create a new workspace 
 
 ```sh
-w new workspace helloworld
+w workspace new helloworld
 cd helloworld
 ```
 
@@ -95,11 +95,11 @@ Clone a existing namespace and the all dependencies into the current folder
 w workspace clone git@github.com:chimpwizards/wand.git
 ```
 
-##### new dependency
+##### dependency new
 
 Create a new dependency in the current workspace 
 
 ```sh
-w new dependency contacts
+w dependency new contacts
 cd dependencies/contacts
 ```

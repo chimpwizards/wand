@@ -26,7 +26,7 @@ w --help
 ##### Then create your new application workspace
 
 ```sh
-w new workspace helloworld \
+w workspace new helloworld \
     --organization git@github.com:ACME
 cd helloworld
 code .
@@ -35,7 +35,7 @@ code .
 ##### Then add your application components/dependency/microservices
 
 ```sh
-w new dependency contacts
+w dependency new contacts
 ```
 
 <!-- ##### Next steps
