@@ -24,6 +24,7 @@ export GIT_SSL_NO_VERIFY=true
 npm config set cafile $NODE_EXTRA_CA_CERTS --global
 #git config http.sslCAinfo $NODE_EXTRA_CA_CERTS
 #git -c http.sslVerify=false clone https://github.com/chimpwizards/wand
+#pip config set global.cert $NODE_EXTRA_CA_CERTS
 
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 
@@ -31,4 +32,5 @@ export NODE_TLS_REJECT_UNAUTHORIZED=0
 # REFERENCE:
 #
 # - https://docs.microsoft.com/en-us/cli/azure/use-cli-effectively?view=azure-cli-latest
+# - https://stackoverflow.com/questions/11621768/how-can-i-make-git-accept-a-self-signed-certificate
 #
