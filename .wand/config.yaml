@@ -40,7 +40,7 @@ dependencies:
     tags:
       - tools
   - path: lockbox
-    git: 'https://github.com/chimpwizards-wand/wand-lockbox.git'
+    git: 'https://github.com/chimpwizards-wand/lockbox.git'
     visibility: private
     tags:
       - lockbox
