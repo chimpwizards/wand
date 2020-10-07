@@ -47,3 +47,5 @@ Build a hello world application step by step guide [here](docs/HELLOWORLD.md) --
 ... visit our [youtube channel](https://www.youtube.com/channel/UCWwjYV_xMprhH9Fgnax2nsg) or email us to [gethelp@chimpwizard.com](mailto:gethelp@chimpwizard.com)
 
 <!-- Connect with us in [slack #wand](https://chimpwizards.slack.com/) or visit our [youtube channel](https://www.youtube.com/channel/UCWwjYV_xMprhH9Fgnax2nsg) -->
+
+and if you are interested to contibute.. Full code can be found at [https://github.com/chimpwizards-wand](https://github.com/chimpwizards-wand)
