@@ -24,13 +24,13 @@ There is also possible to execute the command just on the dependencies or just i
 w shell --no-dependencies git commit -am "Updates documentation"
 ```
 
-Additionally some extra options to filter what type of dependencies top apply the command to, the following command runs the command just for those dependencies tagged as microservice.
+Additionally some extra options to filter what dependencies you want to apply the command to, the following command runs the command just for those dependencies tagged as microservice.
 
 ```sh
 w shell --tags microservice git checkout -b release/2.3
 ```
 
-Commands can also be customized, additional commands can be added using `new shell` command (see below)  which will store the definition inside the wand config file. Additionally `shell` command also will look if a command is alredy defined in an existing package.json at the root of the workspce.
+Commands can also be customized, additional commands can be added using `new shell` command (see below)  which will store the definition inside the wand config file, also  `shell` command  will look if a command is alredy defined in an existing package.json at the root of the workspce.
 
 eg this command will run the existing sayHi command across all dependencies
 

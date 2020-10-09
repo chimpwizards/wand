@@ -47,6 +47,10 @@ dependencies:
       - vault
       - secrets
       - private
+  - path: templates
+    git: 'https://github.com/chimpwizards-wand/wand-templates.git'
+    tags:
+      - templates
 scripts:
   hello: ./scripts/hello.sh
   start-ssh: scripts/start-ssh.sh
