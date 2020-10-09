@@ -8,5 +8,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Initial release
 
-## [2.0.38]
+## [2.0.38] - 2020.10.9
+
+- Documentation updates
+
+## [2.0.37] - 2020.10.6
+
+- Release MVP version
 
