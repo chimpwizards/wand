@@ -35,6 +35,11 @@ dependencies:
     tags:
       - dependencies
       - spells
+  - path: dependencies/spells/meta
+    git: 'https://github.com/chimpwizards-wand/spell-meta.git'
+    tags:
+      - dependencies
+      - spells      
   - path: tools/vscode-server
     git: 'https://github.com/chimpwizards-tools/vscode-server.git'
     tags:
