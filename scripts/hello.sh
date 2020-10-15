@@ -6,7 +6,7 @@ key="$1"
 
 case $key in
 
-    -h|--help)
+    -h|--helpme)
     help="true"
     shift # past argument
     ;;
@@ -24,5 +24,10 @@ case $key in
 esac
 shift # past argument or value
 done
+
+if [[ $help == "true" ]]; then
+    echo "******** HELP ***********"
+    exit
+fi
 
 echo "Hello $NAME"

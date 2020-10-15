@@ -39,7 +39,7 @@ dependencies:
     git: 'https://github.com/chimpwizards-wand/spell-meta.git'
     tags:
       - dependencies
-      - spells      
+      - spells
   - path: tools/vscode-server
     git: 'https://github.com/chimpwizards-tools/vscode-server.git'
     tags:
@@ -57,6 +57,11 @@ dependencies:
     tags:
       - templates
 scripts:
-  hello: ./scripts/hello.sh
+  hello: 
+    command: ./scripts/hello.sh
+    current: true
   start-ssh: scripts/start-ssh.sh
   list: ./scripts/list-installed-packages.sh
+  new-repo:
+    command: scripts/gh/create-spell-repo.sh
+    current: true
