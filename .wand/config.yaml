@@ -60,6 +60,7 @@ scripts:
   hello: 
     command: ./scripts/hello.sh
     current: true
+    verbose: true
   start-ssh: scripts/start-ssh.sh
   list: ./scripts/list-installed-packages.sh
   new-repo:
