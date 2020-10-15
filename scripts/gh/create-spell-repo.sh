@@ -6,7 +6,7 @@ key="$1"
 
 case $key in
 
-    -h|--help)
+    -u|--usage)
     help="true"
     shift # past argument
     ;;
