@@ -63,5 +63,5 @@ scripts:
   start-ssh: scripts/start-ssh.sh
   list: ./scripts/list-installed-packages.sh
   new-repo:
-    command: scripts/gh/create-spell-repo.sh
+    command: scripts/gh/create-repo.sh
     current: true

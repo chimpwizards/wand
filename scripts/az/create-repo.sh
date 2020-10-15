@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Set Environment defaults
+. $(dirname "${BASH_SOURCE[0]}")/../set-env.sh
+
 while [[ $# -gt 0 ]]
 do
 key="$1"
@@ -28,11 +31,11 @@ done
 # Show help
 if [[ $help == "true" ]]; then
     echo """
-Usage: w x hello [options]
+Usage: w x new-repo [options]
 
 
 Options:
-  --name  Name of the person to salute                          [string]
+  --name  Name of the repo to create                            [string]
   --usage Show help                                             [boolean]
 
 (copyrigth) chimpwizards.com 2020
@@ -42,5 +45,4 @@ Must provide a valid command
     """
     exit
 fi
-
-echo "Hello $NAME"
+az repos create  --name $NAME --organization $ORG  --project "$PROJECT_ROOT" 
