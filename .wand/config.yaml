@@ -61,7 +61,10 @@ scripts:
     command: ./scripts/hello.sh
     current: true
     verbose: true
-  start-ssh: scripts/start-ssh.sh
+  sshs: 
+    command: scripts/start-ssh.sh
+    current: true
+    verbose: true
   list: ./scripts/list-installed-packages.sh
   new-repo:
     command: scripts/gh/create-repo.sh
