@@ -57,7 +57,7 @@ dependencies:
     tags:
       - templates
   - path: scripts
-    git: 'https://github.com/chimpwizards-wand/scripts.git'
+    git: 'https://github.com/chimpwizards/scripts.git'
     tags:
       - scripts
 
