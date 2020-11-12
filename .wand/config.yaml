@@ -56,6 +56,11 @@ dependencies:
     git: 'https://github.com/chimpwizards-wand/templates.git'
     tags:
       - templates
+  - path: scripts
+      git: 'https://github.com/chimpwizards-wand/scripts.git'
+      tags:
+        - scripts
+
 scripts:
   hello: 
     command: ./scripts/hello.sh
