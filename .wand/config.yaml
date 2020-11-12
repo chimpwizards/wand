@@ -67,17 +67,17 @@ scripts:
     current: true
     verbose: true
   sshs: 
-    command: scripts/start-ssh.sh
+    command: scripts/ssh/start-ssh.sh
     current: true
     verbose: true
   list: 
-    command: ./scripts/list-installed-packages.sh
+    command: ./scripts/npm/list-installed-packages.sh
     current: true
     verbose: true
   new-repo:
     command: scripts/gh/create-repo.sh
     current: true
   commit:
-    command: scripts/commit.sh
+    command: scripts/git/commit.sh
     current: true
     verbose: true
