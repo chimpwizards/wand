@@ -53,7 +53,7 @@ dependencies:
       - secrets
       - private
   - path: templates
-    git: 'https://github.com/chimpwizards-wand/wand-templates.git'
+    git: 'https://github.com/chimpwizards-wand/templates.git'
     tags:
       - templates
 scripts:
