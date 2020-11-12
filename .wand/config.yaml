@@ -57,9 +57,9 @@ dependencies:
     tags:
       - templates
   - path: scripts
-      git: 'https://github.com/chimpwizards-wand/scripts.git'
-      tags:
-        - scripts
+    git: 'https://github.com/chimpwizards-wand/scripts.git'
+    tags:
+      - scripts
 
 scripts:
   hello: 
@@ -77,3 +77,7 @@ scripts:
   new-repo:
     command: scripts/gh/create-repo.sh
     current: true
+  commit:
+    command: scripts/commit.sh
+    current: true
+    verbose: true
