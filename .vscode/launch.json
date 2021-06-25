@@ -50,5 +50,63 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"
         }, 
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "wand meta (model)",
+            "cwd": "${workspaceFolder}/dependencies/spells/meta",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/dependencies/spells/meta/src/Wand.ts",
+                "meta",
+                "model",
+                "--model",
+                "${workspaceFolder}/dependencies/spells/meta/src/samples/model/model.m3",
+                "--format",
+                "json",
+                "--output",
+                "${workspaceFolder}/dependencies/spells/meta/src/samples/model/model.json",
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG":"w:cli:meta:*",
+                "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }, 
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "wand meta (generate)",
+            "cwd": "${workspaceFolder}/dependencies/spells/meta",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/dependencies/spells/meta/src/Wand.ts",
+                "meta",
+                "generate",
+                "--model",
+                "${workspaceFolder}/dependencies/spells/meta/samples/model/model.m3",
+                "--templates",
+                "${workspaceFolder}/dependencies/spells/meta/samples/templates",
+                "--output",
+                "${workspaceFolder}/dependencies/spells/meta/samples/code",
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG":"w:cli:meta:*",
+                "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }, 
     ]
 }

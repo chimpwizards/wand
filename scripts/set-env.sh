@@ -28,6 +28,11 @@ npm config set cafile $NODE_EXTRA_CA_CERTS --global
 
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 
+# PATHS
+export SCRIPT_PATH=$(cd `dirname ${0}`; pwd)
+export SCRIPT_PARENT=$(dirname -- $SCRIPT_PATH)
+
+
 #
 # REFERENCE:
 #
