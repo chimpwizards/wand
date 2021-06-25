@@ -53,22 +53,31 @@ dependencies:
       - secrets
       - private
   - path: templates
-    git: 'https://github.com/chimpwizards-wand/wand-templates.git'
+    git: 'https://github.com/chimpwizards-wand/templates.git'
     tags:
       - templates
+  - path: scripts
+    git: 'https://github.com/chimpwizards/scripts.git'
+    tags:
+      - scripts
+
 scripts:
   hello: 
     command: ./scripts/hello.sh
     current: true
     verbose: true
   sshs: 
-    command: scripts/start-ssh.sh
+    command: scripts/ssh/start-ssh.sh
     current: true
     verbose: true
   list: 
-    command: ./scripts/list-installed-packages.sh
+    command: ./scripts/npm/list-installed-packages.sh
     current: true
     verbose: true
   new-repo:
     command: scripts/gh/create-repo.sh
     current: true
+  commit:
+    command: scripts/git/commit.sh
+    current: true
+    verbose: true
