@@ -17,7 +17,7 @@
                 "${workspaceFolder}/dependencies/spells/workspace/src/Wand.ts",
                 "update",
                 "--location",
-                "${workspaceFolder}"
+                "/Users/afuentes009/projetcs/tmp/sample"
             ],
             "env": {
                 "NODE_ENV": "development",
@@ -108,5 +108,81 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"
         }, 
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "wand --help",
+            "cwd": "${workspaceFolder}/dependencies/main",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/dependencies/main/src/Wand.ts",
+                "--help",
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG":"w:cli:api:*",
+                "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }, 
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "wand api registry (main)",
+            "cwd": "${workspaceFolder}/dependencies/main",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/dependencies/main/src/Wand.ts",
+                "api",
+                "registry",
+                "add",
+                "petstore",
+                "--swagger",
+                "https://petstore.swagger.io/v2/swagger.json"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG":"w:cli:api:*",
+                "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "wand api registry",
+            "cwd": "${workspaceFolder}/dependencies/spells/api",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/dependencies/spells/api/src/Wand.ts",
+                "api",
+                "registry",
+                "add",
+                "petstore",
+                "--swagger",
+                "https://petstore.swagger.io/v2/swagger.json"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG":"w:cli:api:*",
+                "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
     ]
 }

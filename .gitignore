@@ -14,3 +14,4 @@ dependencies
 lockbox
 templates
 scripts*
+dependencies/spells/api

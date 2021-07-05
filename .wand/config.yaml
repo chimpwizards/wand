@@ -60,17 +60,21 @@ dependencies:
     git: 'https://github.com/chimpwizards/scripts.git'
     tags:
       - scripts
-
+  - path: dependencies/spells/api
+    tags:
+      - workspace
+      - dependencies/spells/api
+    git: 'git@github.com:chimpwizards-wand/spell-api.git'
 scripts:
-  hello: 
+  hello:
     command: ./scripts/hello.sh
     current: true
     verbose: true
-  sshs: 
+  sshs:
     command: scripts/ssh/start-ssh.sh
     current: true
     verbose: true
-  list: 
+  list:
     command: ./scripts/npm/list-installed-packages.sh
     current: true
     verbose: true
@@ -81,3 +85,11 @@ scripts:
     command: scripts/git/commit.sh
     current: true
     verbose: true
+commands:
+  api:
+    - name: petstore
+      type: swagger
+      config:
+        url: 'https://petstore.swagger.io/v2/swagger.json'
+        executer: w a ns call --name petstore
+        attacher: w a ns define --name petstore
