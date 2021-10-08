@@ -60,12 +60,11 @@ dependencies:
     git: 'https://github.com/chimpwizards/scripts.git'
     tags:
       - scripts
-  - path: tmp/wand
+  - path: dependencies/spells/api
     tags:
-      - tmp
-      - wand
       - workspace
-    git: 'https://github.com/chimpwizards/wand.git'
+      - dependencies/spells/api
+    git: 'git@github.com:chimpwizards-wand/spell-api.git'    
 scripts:
   hello:
     command: ./scripts/hello.sh
