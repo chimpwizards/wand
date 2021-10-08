@@ -19,3 +19,5 @@ scripts*
 # Trash
 .DS_Store
 
+
+tmp/wand
