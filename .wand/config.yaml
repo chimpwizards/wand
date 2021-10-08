@@ -60,17 +60,22 @@ dependencies:
     git: 'https://github.com/chimpwizards/scripts.git'
     tags:
       - scripts
-
+  - path: tmp/wand
+    tags:
+      - tmp
+      - wand
+      - workspace
+    git: 'https://github.com/chimpwizards/wand.git'
 scripts:
-  hello: 
+  hello:
     command: ./scripts/hello.sh
     current: true
     verbose: true
-  sshs: 
+  sshs:
     command: scripts/ssh/start-ssh.sh
     current: true
     verbose: true
-  list: 
+  list:
     command: ./scripts/npm/list-installed-packages.sh
     current: true
     verbose: true
