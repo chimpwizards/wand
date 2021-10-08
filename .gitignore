@@ -13,7 +13,9 @@ lockbox
 dependencies
 lockbox
 templates
-scripts
+scripts*
+
 
 # Trash
 .DS_Store
+
