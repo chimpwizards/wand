@@ -17,14 +17,13 @@
                 "${workspaceFolder}/dependencies/spells/workspace/src/Wand.ts",
                 "w",
                 "clone",
-                "--git",
                 "https://github.com/chimpwizards/wand.git",
                 "--location",
                 "${workspaceFolder}/tmp"
             ],
             "env": {
                 "NODE_ENV": "development",
-                "DEBUG":"w:cli:commands:clixxx,w:cli:workspace:*",
+                "DEBUG":"w:cli:commands:cli,w:cli:workspace:*",
                 "NODE_EXTRA_CA_CERTS": "${workspaceFolder}/lockbox/certs/self-signed-bundle.pem",
             },
             "console": "integratedTerminal",
