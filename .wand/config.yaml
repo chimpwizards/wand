@@ -1,51 +1,51 @@
 name: wand
-organization: 'https://github.com/chimpwizards-wand'
+organization: 'git@github.com:chimpwizards-wand'
 dependencies:
   - path: dependencies/main
-    git: 'https://github.com/chimpwizards-wand/main.git'
+    git: 'git@github.com:chimpwizards-wand/main.git'
     tags:
       - dependencies
   - path: dependencies/commons/
-    git: 'https://github.com/chimpwizards-wand/commons.git'
+    git: 'git@github.com:chimpwizards-wand/commons.git'
     tags:
       - dependencies
       - commons
   - path: dependencies/spells/config
-    git: 'https://github.com/chimpwizards-wand/spell-config.git'
+    git: 'git@github.com:chimpwizards-wand/spell-config.git'
     tags:
       - dependencies
       - spells
   - path: dependencies/spells/shell
-    git: 'https://github.com/chimpwizards-wand/spell-shell.git'
+    git: 'git@github.com:chimpwizards-wand/spell-shell.git'
     tags:
       - dependencies
       - spells
   - path: dependencies/spells/hello
-    git: 'https://github.com/chimpwizards-wand/spell-hello.git'
+    git: 'git@github.com:chimpwizards-wand/spell-hello.git'
     tags:
       - dependencies
       - spells
   - path: dependencies/spells/spells
-    git: 'https://github.com/chimpwizards-wand/spell-spells.git'
+    git: 'git@github.com:chimpwizards-wand/spell-spells.git'
     tags:
       - dependencies
       - spells
   - path: dependencies/spells/workspace
-    git: 'https://github.com/chimpwizards-wand/spell-workspace.git'
+    git: 'git@github.com:chimpwizards-wand/spell-workspace.git'
     tags:
       - dependencies
       - spells
   - path: dependencies/spells/meta
-    git: 'https://github.com/chimpwizards-wand/spell-meta.git'
+    git: 'git@github.com:chimpwizards-wand/spell-meta.git'
     tags:
       - dependencies
       - spells
   - path: tools/vscode-server
-    git: 'https://github.com/chimpwizards-tools/vscode-server.git'
+    git: 'git@github.com:chimpwizards-tools/vscode-server.git'
     tags:
       - tools
   - path: lockbox
-    git: 'https://github.com/chimpwizards-wand/lockbox.git'
+    git: 'git@github.com:chimpwizards-wand/lockbox.git'
     visibility: private
     tags:
       - lockbox
@@ -53,11 +53,11 @@ dependencies:
       - secrets
       - private
   - path: templates
-    git: 'https://github.com/chimpwizards-wand/templates.git'
+    git: 'git@github.com:chimpwizards-wand/templates.git'
     tags:
       - templates
   - path: scripts
-    git: 'https://github.com/chimpwizards/scripts.git'
+    git: 'git@github.com:chimpwizards/scripts.git'
     tags:
       - scripts
   - path: dependencies/spells/api
@@ -70,7 +70,7 @@ dependencies:
       - tmp
       - wand
       - workspace
-    git: 'https://github.com/chimpwizards/wand.git'
+    git: 'git@github.com:chimpwizards/wand.git'
 scripts:
   hello:
     command: ./scripts/hello.sh
